@@ -34,7 +34,7 @@
     "nomnoml": "^1.6.2",
     "safe-buffer": "^5.2.1",
     "stream": "0.0.2",
-    "tslog": "^4.8.2",
+    "tslog": "^4.9.2",
     "vanilla-picker": "^2.12.1",
     "xml-js": "^1.6.11"
   },
