@@ -6,22 +6,26 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node ./node_modules/gulp/bin/gulp.js",
-    "watch": "node ./node_modules/gulp/bin/gulp.js && node ./node_modules/gulp/bin/gulp.js watch"
+    "watch": "node ./node_modules/gulp/bin/gulp.js && node ./node_modules/gulp/bin/gulp.js watch",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@popperjs/core": "^2.9.2",
     "bootstrap": "5.0.2",
-    "gulp": "^4.0.2",
-    "gulp-cli": "^2.2.0",
+    "gulp": "^5.0.0",
+    "gulp-cli": "^3.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
     "gulp-eslint": "^6.0.0",
     "gulp-header": "^2.0.9",
     "gulp-order": "^1.2.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.2"
-  }
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify": "^3.0.2",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
