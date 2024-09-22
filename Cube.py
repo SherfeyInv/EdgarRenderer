@@ -167,7 +167,7 @@ class Cube(object):
         # will side effect cube.periodStartEndLabelDict if there is a duration fact with period start/end label.
         # will generally side effect self.factMemberships by appending to it.
 
-        initialDurationSet = set([x[1]['period'] for x in self.factMemberships if x[1]['period'].periodTypeStr=='duration'])
+        initialDurationSet = set([x[1]['period'] for x in self.factMemberships if ('period' in x[1] and x[1]['period'].periodTypeStr=='duration')])
 
         def matchingDurationSet(iFxm,preferredLabel):
             # iFxm = instant Fact - axis - membership tuple.
@@ -334,8 +334,8 @@ class Cube(object):
             self.controller.logDebug("Special sort of {} {} needed".format(axisQname,giveMemGetPositionDict))
             prefix = axis.prefix
             nsuri = axis.namespaceURI
-            ordering = [arelle.ModelObject.QName(prefix,nsuri,name) for name in members]
-            overrideordering = [arelle.ModelObject.QName(prefix,nsuri,name) for name in lastmembers]
+            ordering = [arelle.ModelValue.QName(prefix,nsuri,name) for name in members]
+            overrideordering = [arelle.ModelValue.QName(prefix,nsuri,name) for name in lastmembers]
             memberList = Utils.heapsort(memberList,(lambda x,y: Utils.compareInOrdering(x,y,ordering,overrideordering)))
             giveMemGetPositionDict = dict([(x,i) for i,x in enumerate(memberList)])
             self.controller.logDebug("Resulted in {}".format(giveMemGetPositionDict))
