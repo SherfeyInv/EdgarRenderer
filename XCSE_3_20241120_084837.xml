@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suspend-report>
+    <mic>XCSE</mic>
+    <publication-time>2024-11-20T07:48:37Z</publication-time>
+    <comment></comment>
+    <action-type>HALTED</action-type>
+    <issuers>
+        <issuer>
+            <name>BankInvest Emerging Markets Aktier A</name>
+            <lei>5493003CT78XIMXR8265</lei>
+            <instruments>
+                <instrument>
+                    <isin>DK0060516854</isin>
+                    <name>BAIEMMAA</name>
+                    <reason>Non Disclosure Of Inside Information About The Issuer Or Financial Instrument</reason>
+                </instrument>
+            </instruments>
+        </issuer>
+        <issuer>
+            <name>BankInvest Emerging Markets Aktier Akk A</name>
+            <lei>8945007TXE2HTNNVKC53</lei>
+            <instruments>
+                <instrument>
+                    <isin>DK0062502621</isin>
+                    <name>BAIEMMAAA</name>
+                    <reason>Non Disclosure Of Inside Information About The Issuer Or Financial Instrument</reason>
+                </instrument>
+            </instruments>
+        </issuer>
+    </issuers>
+</suspend-report>
+
+
