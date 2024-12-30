@@ -1,0 +1,80 @@
+title: resources.data.gov
+email: datagov@gsa.gov
+description: >-
+  Resources.data.gov is an online repository of policies, tools, case studies and other resources to support data governance, management, and use throughout the federal government
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: usdatagov
+github_username: GSA
+dap_agency: GSA
+searchgov_affiliate: datagov-resources
+
+github:
+  organization: GSA
+  repository: resources.data.gov
+  default_branch: main
+
+scripts:
+  - assets/uswds/js/uswds.min.js
+  - assets/js/bundle.js
+
+styles:
+  - assets/uswds/css/styles.css
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-toc
+  - jekyll-redirect-from
+source: pages
+
+keep_files:
+  - assets/js
+  - assets/uswds
+
+exclude:
+  - CONTRIBUTING.md
+  - LICENSE.md
+  - README.md
+  - _js
+  - _scss
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - node_modules
+  - package-lock.json
+  - package.json
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+collections:
+  resources:
+    output: true
+  summaries:
+    output: false
+  categories:
+    output: true
+  keywords:
+    output: true
+  guidance_tags:
+    output: true
+  data_standards:
+    output: true
+
+page_gen:
+  - index_files: false
+    data: glossary
+    name: term
+    title: "Glossary: "
+
+toc:
+  min_level: 2
+  max_level: 3
+  list_class: 'usa-sidenav'
+  sublist_class: 'usa-sidenav__sublist'
+  item_class: 'usa-sidenav__item'
+  item_prefix: 'usa-'
