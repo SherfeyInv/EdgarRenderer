@@ -7,35 +7,47 @@ import { Errors } from "./errors";
 
 export const ErrorsMinor = {
 
-	unknownError: () => {
+  unknownError: () => {
 
-		const content = document.createTextNode('An Error has occured within the Inline XBRL Viewer.');
+    const content = document.createTextNode('An Error has occured within the Inline XBRL Viewer.');
 
-		const element = document.createElement('div');
-		element.setAttribute('class', 'alert-height alert alert-warning alert-dismissable show mb-0');
-		element.appendChild(content);
+    const element = document.createElement('div');
+    element.setAttribute('class', 'alert-height alert alert-warning alert-dismissable show mb-0');
+    element.appendChild(content);
 
-		const closeBtn = Errors.createBsCloseBtn();
-		element.appendChild(closeBtn);
+    const button = document.createElement('button');
+    button.setAttribute('type', 'button');
+    button.setAttribute('class', 'btn-close float-end');
+    button.setAttribute('data-bs-dismiss', 'alert');
+    button.setAttribute('aria-label', 'Close');
+    button.addEventListener('click', () => { Errors.updateMainContainerHeight(true); });
 
-		document.getElementById('error-container')?.appendChild(element);
+    element.appendChild(button);
 
-		Errors.updateMainContainerHeight();
-	},
+    document.getElementById('error-container')?.appendChild(element);
 
-	factNotFound: () => {
-		const content = document.createTextNode('Inline XBRL cannot locate the requested fact.');
+    Errors.updateMainContainerHeight();
+  },
 
-		const element = document.createElement('div');
-		element.setAttribute('class', 'alert-height alert alert-warning alert-dismissable show mb-0');
-		element.appendChild(content);
-		
-		const closeBtn = Errors.createBsCloseBtn();
-		element.appendChild(closeBtn);
+  factNotFound: () => {
+    const content = document.createTextNode('Inline XBRL can not locate the requested fact.');
 
-		document.getElementById('error-container')?.appendChild(element);
+    const element = document.createElement('div');
+    element.setAttribute('class', 'alert-height alert alert-warning alert-dismissable show mb-0');
+    element.appendChild(content);
 
-		Errors.updateMainContainerHeight();
-	},
+    const button = document.createElement('button');
+    button.setAttribute('type', 'button');
+    button.setAttribute('class', 'btn-close float-end');
+    button.setAttribute('data-bs-dismiss', 'alert');
+    button.setAttribute('aria-label', 'Close');
+    button.addEventListener('click', () => { Errors.updateMainContainerHeight(true); });
+
+    element.appendChild(button);
+
+    document.getElementById('error-container')?.appendChild(element);
+
+    Errors.updateMainContainerHeight();
+  },
 
 };

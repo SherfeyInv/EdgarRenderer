@@ -3,9 +3,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <!-- this doesn't work on Arelle LocalViewer but is required on sec.gov website
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-    -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -32,7 +29,6 @@
                 // for SEC.GOV: const urlPattern = /(\?doc=(\/Archives\/edgar\/data\/[0-9]+\/[0-9]{10}([0-9]{8})\/).*$)/;
                 // for Arelle GUI: const urlPattern = /(\?doc=(\/[0-9]+\/).*$)/;
                 const urlPattern = /(\?doc=(\/[0-9]+\/).*$)/;
-                const ixvPlusNsPattern = /http:\/\/xbrl.sec.gov\/(ffd|sbs)\/.*$/;
                 var ixvUrl = null;
                 if (! urlPattern.test(url)) {
                     alert("Not an EDGAR inline XBRL document viewing request, please check URL");
@@ -53,7 +49,7 @@
                                 } else {
                                    const numInstances = Object.keys(ml["instance"]).length;
                                    let maxDocsPerInst = 0;
-                                   let hasIxvPlusExhibit = false;
+                                   let hasFeeExhibit = false;
                                    Object.keys(ml["instance"]).forEach(instanceNames => {
                                         let docsInInstance = instanceNames.split(" ").length;
                                         if (docsInInstance > maxDocsPerInst)
@@ -61,12 +57,12 @@
                                         if ("baseTaxonomies" in ml["instance"][instanceNames]) {
                                            Object.keys(ml["instance"][instanceNames]["baseTaxonomies"])
                                            .forEach(baseTaxonomyUrl => {
-                                               if (ixvPlusNsPattern.test(baseTaxonomyUrl))
-                                                   hasIxvPlusExhibit = true;
+                                               if (baseTaxonomyUrl.startsWith("http://xbrl.sec.gov/ffd/"))
+                                                   hasFeeExhibit = true;
                                            });
                                         }
                                        });
-                                   if (numInstances > 1 || maxDocsPerInst > 1 || hasIxvPlusExhibit || url.includes("&redline=true") )
+                                   if (numInstances > 1 || maxDocsPerInst > 1 || hasFeeExhibit || url.includes("&redline=true") )
                                        loadViewer("/ixviewer-plus/ix.xhtml" + ixParams);
                                    else
                                        loadViewer("/ixviewer/ix.html" + ixParams);

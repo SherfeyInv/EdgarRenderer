@@ -3,78 +3,103 @@
  * are not subject to domestic copyright protection. 17 U.S.C. 105.
  */
 
-import { Reference } from "../interface/fact";
+import { Reference, SingleFact } from "../interface/fact";
 import { FormInformation } from "../interface/form-information";
-import { InlineFileMeta, InstanceFile } from "../interface/instance-file";
-import { Section } from "../interface/meta";
+import { Meta } from "../interface/meta";
 
+export const Constants: {
+  version: string,
+  scrollPosition: string,
+  hoverOption: boolean,
+  getHTMLAttributes: object,
+  getPaginationPerPage: number,
+  getHtmlOverallFactsCount: string | null,
+  getMetaSourceDocuments: Array<{}>,
+  getInstanceFiles: Array<{
+    current: boolean,
+    formInformation: {
+      axisCustom: number,
+      axisStandard: number,
+      baseTaxonomies: { [key: string]: number },
+      contextCount: number,
+      dts: { [key: string]: { [key: string]: Array<string> } },
+      elementCount: number,
+      entityCount: 1,
+      hidden: { [key: string]: number },
+      keyCustom: number,
+      keyStandard: number,
+      memberCustom: number,
+      memberStandard: number,
+      nsprefix: string,
+      nsuri: string,
+      segmentCount: number,
+      unitcount: number,
+    },
+    instance: number,
+    map: Map<string, SingleFact>,
+    metaInstance: Meta,
+    xhtmls: Array<{
+      current: boolean,
+      loaded: boolean,
+      slug: string,
+      url: string,
+      xhtml: string,
+    }>,
+    xmlSlug: Array<string>,
+    xmlUrls: Array<string>,
+  }>,
+  getInlineFiles: Array<{
+    current: boolean,
+    loaded: boolean,
+    slug: string,
+    dropdown?: boolean,
+    table?: boolean
+  }>,
+  getFormInformation: FormInformation,
+  getStdRef: { [key: string]: Reference },
+  getMetaReports: Array<{}>,
+  getMetaTags: Array<{}>,
+  getMetaCustomPrefix: null | string,
+  getMetaDts: object,
+  getMetaDocuments: () => object
+} = {
 
-//Not really used (see comment below)
-type MetaDocument = any;
+  version: "24.0.1.01",
 
+  scrollPosition: localStorage.getItem("scrollPosition") || "start",
 
+  hoverOption: localStorage.getItem("hoverOption") === "true" || false,
 
-export const Constants =
-{
-	version: "24.2.u1",
-	featureSet: "plus",
+  getHTMLAttributes: {},
 
-	scrollPosition: typeof window !== 'undefined' && window.localStorage.getItem("scrollPosition") || "start",
+  getPaginationPerPage: 10,
 
-	hoverOption: typeof window !== 'undefined' && window.localStorage.getItem("hoverOption") === "true" || false,
+  getHtmlOverallFactsCount: null,
 
-	getHTMLAttributes: {} as Record<any, unknown>,
+  getMetaSourceDocuments: [],
 
-	getPaginationPerPage: 10,
+  getMetaTags: [],
 
-	getHtmlOverallFactsCount: null as string | null,
+  getInstanceFiles: [],
 
-	getMetaSourceDocuments: [] as string[],
+  getInlineFiles: [],
 
-	getMetaTags: [] as unknown[],
+  getMetaReports: [],
 
-	getInstanceFiles: [] as InstanceFile[],
+  getStdRef: {},
 
-	getInlineFiles: [] as InlineFileMeta[],
+  getFormInformation: {},
 
-	sections: [] as Section[],
+  getMetaCustomPrefix: null,
 
-	setSections: (sections: Array<Section>): void => {
-		if (sections) {
-			Constants.sections = sections;
-			sessionStorage.setItem('sections', JSON.stringify(sections));
-		}
-	},
+  getMetaDts: null,
 
-	getSectionsFromSessionStorage: (): Section[] => {
-		const sectionsFromLocal = sessionStorage.getItem('sections');
-		return JSON.parse(sectionsFromLocal || '[]') as Section[];
-	},
-
-	getStdRef: {} as Record<string, Reference>,
-
-	getFormInformation: {} as FormInformation,
-
-	getMetaCustomPrefix: null as string | null,
-
-	//These are never accessed outside of old unit tests
-	getMetaDts: null as MetaDocument | null,
-	getMetaDocuments: (input: string): MetaDocument | null => {
-		if (input && typeof input === "string") {
-			return Constants.getMetaDts && Constants.getMetaDts[input]
-				? Constants.getMetaDts[input]
-				: null;
-		}
-
-		return null;
-	},
-
-	getScrollPosition: (): number => {
-		const currentScrollPosition = document.getElementById('dynamic-xbrl-form')!.scrollTop as number;
-		return currentScrollPosition;
-	},
-
-	getNavBarsHeight: (): number => {
-		return document.querySelector<HTMLElement>('div[id="topNavs"]')?.offsetHeight || 0;
-	}
+  getMetaDocuments: (input: string) => {
+    if (input && typeof input === "string") {
+      return Constants.getMetaDts && Constants.getMetaDts[input]
+        ? Constants.getMetaDts[input]
+        : null;
+    }
+    return null;
+  },
 };

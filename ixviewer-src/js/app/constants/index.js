@@ -6,8 +6,7 @@
 "use strict";
 
 var Constants = {
-  version: "24.2.u1", // release quarter
-  featureSet: "legacy",
+  version: "23.2.01",
 
   fileSizeError: [7500000, "7.5MB"],
 
@@ -31,7 +30,7 @@ var Constants = {
     0: "Zero",
     1: "Tens",
     2: "Hundreds",
-    3: "Thousands", 
+    3: "Thousands",
     4: "Ten thousands",
     5: "Hundred thousands",
     6: "Millions",
