@@ -1,0 +1,344 @@
+<SEC-DOCUMENT>0000950170-24-020392.txt : 20240226
+<SEC-HEADER>0000950170-24-020392.hdr.sgml : 20240226
+<ACCEPTANCE-DATETIME>20240226180836
+ACCESSION NUMBER:		0000950170-24-020392
+CONFORMED SUBMISSION TYPE:	4
+PUBLIC DOCUMENT COUNT:		1
+CONFORMED PERIOD OF REPORT:	20240222
+FILED AS OF DATE:		20240226
+DATE AS OF CHANGE:		20240226
+
+REPORTING-OWNER:	
+
+	OWNER DATA:	
+		COMPANY CONFORMED NAME:			Activision Blizzard, Inc.
+		CENTRAL INDEX KEY:			0000718877
+		STANDARD INDUSTRIAL CLASSIFICATION:	SERVICES-PREPACKAGED SOFTWARE [7372]
+		ORGANIZATION NAME:           	06 Technology
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		4
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	001-39652
+		FILM NUMBER:		24680912
+
+	BUSINESS ADDRESS:	
+		STREET 1:		2701 OLYMPIC BOULEVARD
+		STREET 2:		BUILDING B
+		CITY:			SANTA MONICA
+		STATE:			CA
+		ZIP:			90404
+		BUSINESS PHONE:		3102666025
+
+	MAIL ADDRESS:	
+		STREET 1:		2701 OLYMPIC BOULEVARD
+		STREET 2:		BUILDING B
+		CITY:			SANTA MONICA
+		STATE:			CA
+		ZIP:			90404
+
+	FORMER NAME:	
+		FORMER CONFORMED NAME:	ACTIVISION INC /NY
+		DATE OF NAME CHANGE:	19930114
+
+	FORMER NAME:	
+		FORMER CONFORMED NAME:	MEDIAGENIC
+		DATE OF NAME CHANGE:	19920703
+
+	FORMER NAME:	
+		FORMER CONFORMED NAME:	ACTIVISION INC
+		DATE OF NAME CHANGE:	19880829
+
+REPORTING-OWNER:	
+
+	OWNER DATA:	
+		COMPANY CONFORMED NAME:			MICROSOFT CORP
+		CENTRAL INDEX KEY:			0000789019
+		STANDARD INDUSTRIAL CLASSIFICATION:	SERVICES-PREPACKAGED SOFTWARE [7372]
+		ORGANIZATION NAME:           	06 Technology
+		STATE OF INCORPORATION:			WA
+		FISCAL YEAR END:			0630
+
+	FILING VALUES:
+		FORM TYPE:		4
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	001-39652
+		FILM NUMBER:		24680916
+
+	BUSINESS ADDRESS:	
+		STREET 1:		ONE MICROSOFT WAY
+		CITY:			REDMOND
+		STATE:			WA
+		ZIP:			98052-6399
+		BUSINESS PHONE:		425-882-8080
+
+	MAIL ADDRESS:	
+		STREET 1:		ONE MICROSOFT WAY
+		CITY:			REDMOND
+		STATE:			WA
+		ZIP:			98052-6399
+
+REPORTING-OWNER:	
+
+	OWNER DATA:	
+		COMPANY CONFORMED NAME:			Activision Publishing, Inc.
+		CENTRAL INDEX KEY:			0001870564
+		ORGANIZATION NAME:           	
+
+	FILING VALUES:
+		FORM TYPE:		4
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	001-39652
+		FILM NUMBER:		24680915
+
+	BUSINESS ADDRESS:	
+		STREET 1:		2701 OLYMPIC BOULEVARD
+		STREET 2:		BUILDING B
+		CITY:			SANTA MONICA
+		STATE:			CA
+		ZIP:			90404
+		BUSINESS PHONE:		(310) 255-2000
+
+	MAIL ADDRESS:	
+		STREET 1:		2701 OLYMPIC BOULEVARD
+		STREET 2:		BUILDING B
+		CITY:			SANTA MONICA
+		STATE:			CA
+		ZIP:			90404
+
+REPORTING-OWNER:	
+
+	OWNER DATA:	
+		COMPANY CONFORMED NAME:			Activision Entertainment Holdings, Inc.
+		CENTRAL INDEX KEY:			0001870516
+		ORGANIZATION NAME:           	
+
+	FILING VALUES:
+		FORM TYPE:		4
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	001-39652
+		FILM NUMBER:		24680914
+
+	BUSINESS ADDRESS:	
+		STREET 1:		3100 OCEAN PARK BOULEVARD
+		CITY:			SANTA MONICA
+		STATE:			CA
+		ZIP:			90405
+		BUSINESS PHONE:		(310) 255-2000
+
+	MAIL ADDRESS:	
+		STREET 1:		3100 OCEAN PARK BOULEVARD
+		CITY:			SANTA MONICA
+		STATE:			CA
+		ZIP:			90405
+
+ISSUER:		
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			PLAYSTUDIOS, Inc.
+		CENTRAL INDEX KEY:			0001823878
+		STANDARD INDUSTRIAL CLASSIFICATION:	SERVICES-PREPACKAGED SOFTWARE [7372]
+		ORGANIZATION NAME:           	06 Technology
+		IRS NUMBER:				981606155
+		FISCAL YEAR END:			1231
+
+	BUSINESS ADDRESS:	
+		STREET 1:		10150 COVINGTON CROSS DRIVE
+		CITY:			LAS VEGAS
+		STATE:			NV
+		ZIP:			89144
+		BUSINESS PHONE:		725-877-7000
+
+	MAIL ADDRESS:	
+		STREET 1:		10150 COVINGTON CROSS DRIVE
+		CITY:			LAS VEGAS
+		STATE:			NV
+		ZIP:			89144
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	Acies Acquisition Corp.
+		DATE OF NAME CHANGE:	20200908
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>4
+<SEQUENCE>1
+<FILENAME>ownership.xml
+<DESCRIPTION>4
+<TEXT>
+<XML>
+<?xml version="1.0"?>
+<ownershipDocument>
+
+    <schemaVersion>X0508</schemaVersion>
+
+    <documentType>4</documentType>
+
+    <periodOfReport>2024-02-22</periodOfReport>
+
+    <notSubjectToSection16>true</notSubjectToSection16>
+
+    <issuer>
+        <issuerCik>0001823878</issuerCik>
+        <issuerName>PLAYSTUDIOS, Inc.</issuerName>
+        <issuerTradingSymbol>MYPS</issuerTradingSymbol>
+    </issuer>
+
+    <reportingOwner>
+        <reportingOwnerId>
+            <rptOwnerCik>0000789019</rptOwnerCik>
+            <rptOwnerName>MICROSOFT CORP</rptOwnerName>
+        </reportingOwnerId>
+        <reportingOwnerAddress>
+            <rptOwnerStreet1>ONE MICROSOFT WAY</rptOwnerStreet1>
+            <rptOwnerStreet2></rptOwnerStreet2>
+            <rptOwnerCity>REDMOND</rptOwnerCity>
+            <rptOwnerState>WA</rptOwnerState>
+            <rptOwnerZipCode>98052-6399</rptOwnerZipCode>
+            <rptOwnerStateDescription></rptOwnerStateDescription>
+        </reportingOwnerAddress>
+        <reportingOwnerRelationship>
+            <isDirector>false</isDirector>
+            <isOfficer>false</isOfficer>
+            <isTenPercentOwner>true</isTenPercentOwner>
+            <isOther>false</isOther>
+        </reportingOwnerRelationship>
+    </reportingOwner>
+
+    <reportingOwner>
+        <reportingOwnerId>
+            <rptOwnerCik>0001870564</rptOwnerCik>
+            <rptOwnerName>Activision Publishing, Inc.</rptOwnerName>
+        </reportingOwnerId>
+        <reportingOwnerAddress>
+            <rptOwnerStreet1>2701 OLYMPIC BOULEVARD, BUILDING B</rptOwnerStreet1>
+            <rptOwnerStreet2></rptOwnerStreet2>
+            <rptOwnerCity>SANTA MONICA</rptOwnerCity>
+            <rptOwnerState>CA</rptOwnerState>
+            <rptOwnerZipCode>90404</rptOwnerZipCode>
+            <rptOwnerStateDescription></rptOwnerStateDescription>
+        </reportingOwnerAddress>
+        <reportingOwnerRelationship>
+            <isDirector>false</isDirector>
+            <isOfficer>false</isOfficer>
+            <isTenPercentOwner>true</isTenPercentOwner>
+            <isOther>false</isOther>
+        </reportingOwnerRelationship>
+    </reportingOwner>
+
+    <reportingOwner>
+        <reportingOwnerId>
+            <rptOwnerCik>0001870516</rptOwnerCik>
+            <rptOwnerName>Activision Entertainment Holdings, Inc.</rptOwnerName>
+        </reportingOwnerId>
+        <reportingOwnerAddress>
+            <rptOwnerStreet1>2701 OLYMPIC BOULEVARD, BUILDING B</rptOwnerStreet1>
+            <rptOwnerStreet2></rptOwnerStreet2>
+            <rptOwnerCity>SANTA MONICA</rptOwnerCity>
+            <rptOwnerState>CA</rptOwnerState>
+            <rptOwnerZipCode>90404</rptOwnerZipCode>
+            <rptOwnerStateDescription></rptOwnerStateDescription>
+        </reportingOwnerAddress>
+        <reportingOwnerRelationship>
+            <isDirector>false</isDirector>
+            <isOfficer>false</isOfficer>
+            <isTenPercentOwner>true</isTenPercentOwner>
+            <isOther>false</isOther>
+        </reportingOwnerRelationship>
+    </reportingOwner>
+
+    <reportingOwner>
+        <reportingOwnerId>
+            <rptOwnerCik>0000718877</rptOwnerCik>
+            <rptOwnerName>Activision Blizzard, Inc.</rptOwnerName>
+        </reportingOwnerId>
+        <reportingOwnerAddress>
+            <rptOwnerStreet1>2701 OLYMPIC BOULEVARD, BUILDING B</rptOwnerStreet1>
+            <rptOwnerStreet2></rptOwnerStreet2>
+            <rptOwnerCity>SANTA MONICA</rptOwnerCity>
+            <rptOwnerState>CA</rptOwnerState>
+            <rptOwnerZipCode>90404</rptOwnerZipCode>
+            <rptOwnerStateDescription></rptOwnerStateDescription>
+        </reportingOwnerAddress>
+        <reportingOwnerRelationship>
+            <isDirector>false</isDirector>
+            <isOfficer>false</isOfficer>
+            <isTenPercentOwner>true</isTenPercentOwner>
+            <isOther>false</isOther>
+        </reportingOwnerRelationship>
+    </reportingOwner>
+
+    <aff10b5One>false</aff10b5One>
+
+    <nonDerivativeTable>
+        <nonDerivativeTransaction>
+            <securityTitle>
+                <value>Class A Common Stock</value>
+            </securityTitle>
+            <transactionDate>
+                <value>2024-02-22</value>
+            </transactionDate>
+            <transactionCoding>
+                <transactionFormType>4</transactionFormType>
+                <transactionCode>S</transactionCode>
+                <equitySwapInvolved>false</equitySwapInvolved>
+            </transactionCoding>
+            <transactionAmounts>
+                <transactionShares>
+                    <value>1000000</value>
+                </transactionShares>
+                <transactionPricePerShare>
+                    <value>1.95</value>
+                </transactionPricePerShare>
+                <transactionAcquiredDisposedCode>
+                    <value>D</value>
+                </transactionAcquiredDisposedCode>
+            </transactionAmounts>
+            <postTransactionAmounts>
+                <sharesOwnedFollowingTransaction>
+                    <value>11677398</value>
+                </sharesOwnedFollowingTransaction>
+            </postTransactionAmounts>
+            <ownershipNature>
+                <directOrIndirectOwnership>
+                    <value>I</value>
+                </directOrIndirectOwnership>
+                <natureOfOwnership>
+                    <value>See Footnote</value>
+                    <footnoteId id="F1"/>
+                </natureOfOwnership>
+            </ownershipNature>
+        </nonDerivativeTransaction>
+    </nonDerivativeTable>
+
+    <footnotes>
+        <footnote id="F1">Shares held directly by Activision Publishing, Inc. Activision Publishing, Inc. is a wholly owned subsidiary of Activision Entertainment Holdings, Inc.  Activision Entertainment Holdings, Inc. is a wholly owned subsidiary of Activision Blizzard, Inc. Activision Blizzard, Inc. is a wholly owned subsidiary of Microsoft Corporation. By virtue of these relationships, Activision Entertainment Holdings, Inc., Activision Blizzard, Inc., and Microsoft Corporation may be deemed to beneficially own the securities held directly by Activision Publishing, Inc.</footnote>
+    </footnotes>
+
+    <remarks>Reporting Persons disclaim beneficial ownership of the securities except to the extent of Reporting Persons' pecuniary interest therein, and, pursuant to Rule 16a-1(a)(4) under the Securities Exchange Act of 1934, the Reporting Persons state that the inclusion of these securities in this report shall not be deemed an admission of beneficial ownership of all of the reported securities for purposes of Section 16 or for any other purpose.</remarks>
+
+    <ownerSignature>
+        <signatureName>MICROSOFT CORPORATION, By: /s/ Keith R. Dolliver, Name: Keith R. Dolliver, Title: Corporate Secretary</signatureName>
+        <signatureDate>2024-02-26</signatureDate>
+    </ownerSignature>
+
+    <ownerSignature>
+        <signatureName>ACTIVISION PUBLISHING, INC., By: /s/ Grant Dixton, Name: Grant Dixton, Title: Chief Legal Officer</signatureName>
+        <signatureDate>2024-02-26</signatureDate>
+    </ownerSignature>
+
+    <ownerSignature>
+        <signatureName>ACTIVISION ENTERTAINMENT HOLDINGS, INC., By: /s/ Grant Dixton, Name: Grant Dixton, Title: Chief Legal Officer</signatureName>
+        <signatureDate>2024-02-26</signatureDate>
+    </ownerSignature>
+
+    <ownerSignature>
+        <signatureName>ACTIVISION BLIZZARD, INC., By: /s/ Grant Dixton, Name: Grant Dixton, Title: Chief Legal Officer</signatureName>
+        <signatureDate>2024-02-26</signatureDate>
+    </ownerSignature>
+</ownershipDocument>
+</XML>
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>
